@@ -1,0 +1,14 @@
+body {
+  background: #e5e5e5;
+  color: #252828;
+}
+
+#App {
+  width: 90%;
+  max-width: 980px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  display: flex;
+}
