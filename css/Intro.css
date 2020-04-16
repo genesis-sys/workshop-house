@@ -1,7 +1,7 @@
 #intro {
-  width: 430px;
+  width: 580px;
 
-  margin-right: 20px;
+  margin-right: 64px;
 }
 
 
@@ -28,21 +28,6 @@ button {
 
 button:hover {
   text-decoration: underline;
-}
-
-button.fat {
-  color: #fff;
-  background: #ff5e84;
-
-  width: 150px;
-  height: 30px;
-  border-radius: 6px;
-
-  box-shadow: 0px 8px 16px rgba(255, 0, 92, .12);
-}
-
-button.fat:hover {
-  text-decoration: none;
 }
 
 footer {
