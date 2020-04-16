@@ -1,0 +1,30 @@
+.ideia {
+  display: flex;
+
+  background-color: #fff1f1;
+  box-shadow: 0 4px 16px -8px rgba(1, 1, 1, .1);
+  border-radius: 8px;
+
+  margin: 0 0 32px 0;
+  padding: 32px;
+}
+
+.ideia img {
+  width: 60px;
+  height: 60px;
+
+  margin: 0 32px 0 0;
+}
+
+.ideia h3 {
+  margin: 0;
+}
+
+.ideia p {
+  margin: 8px 0;
+  color: #777;
+}
+
+.ideia .description {
+  margin: 16px 0;
+}
