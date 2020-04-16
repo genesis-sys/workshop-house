@@ -5,7 +5,7 @@ viewport: toda área visível -> vw, vh
 #modal {
   background: #ff5e84;
   color: #fff;
-  position: absolute;
+  position: fixed;
 
   top: 0;
   bottom: 0;
