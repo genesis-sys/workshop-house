@@ -32,5 +32,5 @@
 - **Editor**
   ![Imagem](./backup/assets/0_.png)
 
-[Copyright](https://rocketseat.com.br)
+[Copyright](https://rocketseat.com.br) <br/><br/>
 [Student: **elias alexandre**](https://github.com/eliasallex)
