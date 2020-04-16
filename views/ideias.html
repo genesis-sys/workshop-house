@@ -28,69 +28,22 @@
     </section>
     <main>
       <section id="ideas">
-        <div class="ideia">
-          <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" alt="Curso de programação" />
+        {% for idea in ideas %}
 
-          <div class="content">
-            <h3>Cursos de Programação</h3>
-            <p>Estudo</p>
-            <div class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-              tempora nisi consectetur distinctio est iste eaque dicta eius.
-              Illum tempore dolorem amet repudiandae porro, rem placeat odio
-              debitis laborum animi?
+          <div class="ideia">
+            <img src="{{idea.img}}" alt="Imagem de {{idea.title}}" />
+
+            <div class="content">
+              <h3>{{idea.title}}</h3>
+              <p>{{idea.category}}</p>
+              <div class="description">
+                {{idea.description}}
+              </div>
+              <a href="{{idea.url}}">Ir para a Ideia</a>
             </div>
-            <a href="#">Ir para a Ideia</a>
           </div>
-        </div>
 
-        <div class="ideia">
-          <img src="https://image.flaticon.com/icons/svg/2729/2729005.svg" alt="Exercicios" />
-
-          <div class="content">
-            <h3>Exercícios</h3>
-            <p>Saúde</p>
-            <div class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-              tempora nisi consectetur distinctio est iste eaque dicta eius.
-              Illum tempore dolorem amet repudiandae porro, rem placeat odio
-              debitis laborum animi?
-            </div>
-            <a href="#">Ir para a Ideia</a>
-          </div>
-        </div>
-
-        <div class="ideia">
-          <img src="https://image.flaticon.com/icons/svg/2729/2729027.svg" alt="Imagem de Meditação" />
-
-          <div class="content">
-            <h3>Meditação</h3>
-            <p>Mentalidade</p>
-            <div class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-              tempora nisi consectetur distinctio est iste eaque dicta eius.
-              Illum tempore dolorem amet repudiandae porro, rem placeat odio
-              debitis laborum animi?
-            </div>
-            <a href="#">Ir para a Ideia</a>
-          </div>
-        </div>
-
-        <div class="ideia">
-          <img src="https://image.flaticon.com/icons/svg/2729/2729032.svg" alt="Curso de programação" />
-
-          <div class="content">
-            <h3>Karaokê</h3>
-            <p>Diversão em família</p>
-            <div class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-              tempora nisi consectetur distinctio est iste eaque dicta eius.
-              Illum tempore dolorem amet repudiandae porro, rem placeat odio
-              debitis laborum animi?
-            </div>
-            <a href="#">Ir para a Ideia</a>
-          </div>
-        </div>
+        {% endfor %}
       </section>
     </main>
     <footer>

@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const nunjucks = require("nunjucks");
+const { handle_ideas } = require("./src/utils/functions");
 // const routes = require("./routes");
 
 const app = express();
@@ -56,19 +57,15 @@ nunjucks.configure("views", {
 });
 
 app.get("/", (req, res) => {
-  const lastIdeas = [];
-
-  for (let idea of ideas) {
-    if (lastIdeas.length < 2) {
-      lastIdeas.push(idea);
-    }
-  }
+  const lastIdeas = handle_ideas(ideas, 2);
 
   return res.render("index.html", { ideas: lastIdeas });
 });
 
 app.get("/ideias", (req, res) => {
-  return res.render("ideias.html");
+  const lastIdeas = handle_ideas(ideas);
+
+  return res.render("ideias.html", { ideas: lastIdeas });
 });
 
 app.listen(3333);
