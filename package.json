@@ -4,10 +4,12 @@
   "main": "index.js",
   "author": "elias al3xexandre",
   "license": "MIT",
+  "keywords": ["NodeJS", "JS", "nunjucks", "HTML", "CSS", "Express"],
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "nunjucks": "^3.2.1"
+    "nunjucks": "^3.2.1",
+    "sqlite3": "^4.1.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"

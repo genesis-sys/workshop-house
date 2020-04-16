@@ -1,0 +1,47 @@
+{% for idea in ideas %}
+
+<!DOCTYPE html>
+<html lang="bt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/Global.css" />
+  <link rel="stylesheet" href="./css/App.css" />
+  <link rel="stylesheet" href="./css/Intro.css" />
+  <link rel="stylesheet" href="./css/Ideias.css" />
+  <link rel="stylesheet" href="./css/Modal.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,700;0,900;1,400&display=swap"
+    rel="stylesheet" />
+  <title>Document</title>
+</head>
+
+<body class="page">
+
+  <div id="App">
+    <form action="/delete" method="POST">
+      <input style="backgroung: none; text-align: center; border: 0; width: 30px;" name="id" value="{{ idea.id }}" readonly>
+      <div class="ideia">
+        <img src="{{idea.image}}" alt="Imagem de {{idea.title}}" />
+
+        <div class="content">
+          <h3>{{idea.title}}</h3>
+          <p>{{idea.category}}</p>
+          <div class="description">
+            {{idea.description}}
+          </div>
+
+          <div style="margin-top: 20px">
+            <button type="submit" class="button" href="/delete">Deletar</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="./src/index.js"></script>
+</body>
+
+</html>
+
+{% endfor %}
